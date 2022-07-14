@@ -1,3 +1,23 @@
+TO RUN THE BACKEND CHALLENGE FILES<br>
+Requirements<br>
+-git (https://git-scm.com/)<br>
+-xampp (https://www.apachefriends.org/download.html) OR laragon for windows(https://laragon.org/download/) <br>
+-Include Php in Path system variable (windows) <br>
+
+Files can be found in  https://github.com/lollydeeo123/League-BackendChallenge<br>
+Open terminal,<br>
+cd to www folder (laragon) or htdocs folder (xampp)<br>
+run git clone https://github.com/lollydeeo123/League-BackendChallenge.git<br>
+run cd League-BackendChallenge<br>
+run php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"<br>
+run php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"<br>
+run php composer-setup.php<br>
+run php -r "unlink('composer-setup.php');"<br>
+run composer install<br>
+run cp .env.example .env<br>
+run php artisan key:generate<br>
+run php artisan serve<br>
+open http://127.0.0.1:8000/ in browser<br>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
